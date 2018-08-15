@@ -6,8 +6,6 @@ from matplotlib import style
 
 style.use('ggplot')
 
-    
-
 class Support_Vector_Machine:
     #init
     def __init__(self,visualization=True):
@@ -17,7 +15,6 @@ class Support_Vector_Machine:
             self.fig = plt.figure()
             self.ax = self.fig.add_subplot(1,1,1)
         
-
     # train (optimize)
     def fit(self, data):
         self.data = data
@@ -135,10 +132,6 @@ class Support_Vector_Machine:
 
         plt.show() 
 
-
-
-
-
 def main():
     data_dict = {-1 : np.array([[1,7],
                             [2,8],
@@ -162,7 +155,6 @@ def main():
     for i in predict_data:
         svm.predict(i)
     svm.visualize(data_dict)
-
 
 if __name__ == "__main__":
     main()
